@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <!-- Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/bank.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl font-bold text-center mt-5">Transaction <span class="text-purple-900">JavaScript Bank</span>
+        </h1>
+    </header>
+
+    <main>
+        <!-- Transaction Summary -->
+        <section class="my-10">
+            <div class="grid lg:grid-cols-3 gap-10 w-3/4 m-auto">
+                <div class="bg-green-200 text-center py-10 border-4 border-green-400 rounded-br-3xl">
+                    <h3 class="text-3xl">Deposit</h3>
+                    <h2 class="text-4xl font-bold">$ <span id="deposit-ammount">0.00</span></h2>
+                </div>
+                <div class="bg-red-200 text-center py-10 border-4 border-red-400 rounded-br-3xl">
+                    <h3 class="text-3xl">Withdraw</h3>
+                    <h2 class="text-4xl font-bold">$ <span id="withdraw-ammount">0.00</span></h2>
+                </div>
+                <div class="bg-blue-200 text-center py-10 border-4 border-blue-400 rounded-br-3xl">
+                    <h3 class="text-3xl">Balance</h3>
+                    <h2 class="text-4xl font-bold">$ <span id="balance-ammount">500</span></h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deposit or Withdraw Money -->
+        <section class="my-10">
+            <div class="lg:w-1/4 w-3/4 m-auto">
+                <input class="w-full mb-3 px-3 py-2 text-lg border-2 rounded-lg border-indigo-800 block" type="number"
+                    name="" id="input-ammount" value="0" placeholder="Enter Ammount">
+                <div class="flex lg:flex-row flex-col gap-4">
+                    <button id="deposit-button"
+                        class="w-full lg:w-2/3 bg-green-600 text-white text-xl py-3 rounded-full">Deposit</button>
+                    <button id="withdraw-button"
+                        class="w-full lg:w-2/3 bg-red-600 text-white text-xl py-3 rounded-full">Withdraw</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <script src="js/bank.js"></script>
+</body>
+
+</html>
