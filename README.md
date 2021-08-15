@@ -1,4 +1,4 @@
 # Banking-JS-Simple
-#For login
+# For login
 email : nazmul@gmail.com
 password : rion
